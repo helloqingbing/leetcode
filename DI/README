@@ -1,0 +1,6 @@
+# An example C++ project with makefile for IoC
+1. Denpendency Injection
+    1.1 Use constructure to do IOC
+    1.2 Use set injection
+    1.3 Use interface injection
+2. Service Locator
