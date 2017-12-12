@@ -1,6 +1,6 @@
 #ifndef __INJECTFINDER__
 #define __INJECTFINDER__
-#include "../include/Finder.h"
+#include "Finder.h"
 #include <string>
 
 class Container {
