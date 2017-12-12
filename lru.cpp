@@ -3,6 +3,7 @@
 #include <string>
 #include <map>
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 
@@ -47,9 +48,9 @@ public:
     void show() {
         if(capacity <= 0) return;
         list<cacheNode>::iterator iter = cacheList.begin();
-
+        int i = 0;
         while(iter != cacheList.end()) {
-            cout<< "cacheNode(" << iter->key << ") = " << iter->value << endl;;
+            cout<< setw(2) << ++i << ": cacheNode(" << setw(2) << iter->key << ") = " << iter->value << endl;;
             iter++;
         }
         cout <<endl;
@@ -58,15 +59,15 @@ public:
 
 
 int main() {
-    LRUCache *lru = new LRUCache(20);
-    lru->set(1, "abcd");
-    lru->set(2, "aasdfasdfbcd");
-    lru->set(5, "asdfasdfljlabcd");
-    lru->set(6, "asdfasdfeabcd");
-    lru->set(7, "dfdfdfdabcd");
-    lru->set(10, "asdfljljwerabcd");
-    lru->set(14, "basdfasdfabcd");
-    lru->set(12, "34werwerabcd");
+    LRUCache *lru = new LRUCache(5);
+    lru->set(1, "1");
+    lru->set(2, "2");
+    lru->set(5, "3");
+    lru->set(6, "4");
+    lru->set(7, "5");
+    lru->set(10, "6");
+    lru->set(14, "7");
+    lru->set(12, "8");
     lru->show();
 
 
