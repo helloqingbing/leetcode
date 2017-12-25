@@ -7,7 +7,7 @@ struct ListNode {
      ListNode(int x) : val(x), next(NULL) {}
 
     ListNode* push_back(int val) {
-        ListNode* head = this; 
+        ListNode* head = this;
         ListNode* node = new ListNode(val);
         while(head->next) {
             head = head->next;
@@ -26,13 +26,13 @@ struct ListNode {
         cout <<endl;
     }
 };
- 
+
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         if(NULL == l1) { return l2; }
         if(NULL == l2) { return l1; }
-        
+
         int value = 0, pre = 0, mod = 0;
         ListNode *tempNode = new ListNode(0);
         ListNode *first = l1, *curl1;
@@ -50,11 +50,11 @@ public:
             tempNode->val = pre;
             curl1->next = tempNode;
         }
-        
+
         if(l1) {
             l1->val = l1->val + pre;
         }
-        
+
         if(l2) {
             l2->val = l2->val + pre;
             curl1->next = l2;
@@ -75,8 +75,5 @@ int main() {
     Solution *s = new Solution();
     s->addTwoNumbers(l1, l2);
     l1->showList();
-
-    
-    
     return 0;
 }

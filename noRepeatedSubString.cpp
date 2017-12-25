@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    string s = "dvdf";
+    string s = "abcdefzfesedfsdfedcvdfe";
     const char *p = s.c_str(), *q = p;
     map<char, int> mcc;
     int cur_len = 0, max_len = 0, index = 0;

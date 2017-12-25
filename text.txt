@@ -1,5 +1,24 @@
  good abc efg hello go right absolute
 abc efg      go absoute
 vector queue stack       list tree
-    good              list     
-yes
+    good              list
+yes  good abc efg hello go right absolute
+abc efg     good abc efg hello go right absolute
+abc efg      go absoute
+vector queue stack       list tree
+    good    good abc efg hello go right absolute
+    abc efg      go absoute
+    vector queue stack       list tree
+        good              list             list    go absoute
+vector queue stack       list tree
+    good      good abc efg hello go right absolute
+    abc efg      go absoute
+    vector queue stack       list tree
+        good              list           list
+        good abc efg hello go right absolute
+       abc efg      go absoute
+       vector queue stack       list tree
+       good abc efg hello go right absolute
+      abc efg      go absoute
+      vector queue stack       list tree
+          good              list         good              list  

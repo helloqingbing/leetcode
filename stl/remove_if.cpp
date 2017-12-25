@@ -2,6 +2,7 @@
 #include <vector>
 #include <algorithm>    // std::remove_if
 using namespace std;
+
 bool IsOdd (int i) { return ((i%2)==1); }
 
 int main () {
@@ -25,8 +26,8 @@ int main () {
 
     vint.clear();
     vint.assign(myints, myints + sizeof(myints)/sizeof(int));
-    
-    vint.erase(remove_if(vint.begin(), vint.end(), IsOdd), vint.end()); 
+
+    vint.erase(remove_if(vint.begin(), vint.end(), IsOdd), vint.end());
     for(itor = vint.begin(); itor != vint.end(); itor++) {
         cout << *itor <<", ";
     }
